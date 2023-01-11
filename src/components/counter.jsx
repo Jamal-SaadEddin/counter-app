@@ -5,9 +5,10 @@ class Counter extends Component {
     count: 1,
   };
 
-  handleIncrement() {
+  handleIncrement = () => {
+    // arrow functions doesn't rebind 'this'
     console.log("Increment Clicked", this);
-  }
+  };
 
   render() {
     return (
